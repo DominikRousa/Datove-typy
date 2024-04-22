@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ui.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Průměr</h2>
+    <p>Čísla oddělte čárkou:</p>
+    <input type="text" id="numberInput" placeholder="Zadejte číslo">
+    <button onclick="calculateAverage()">Spočítat průměr</button>
+    <p id="averageOut"></p>
+  </div>
+
+  <div class="card">
+    <h2>Nejvyšší / Nejnižší</h2>
+    <input type="text" id="numberInput" placeholder="Zadejte číslo">
+    <button onclick="findMinMax()">Najít min/max</button>
+    <p id="minmaxOut"></p>
+  </div>
+
+  <div class="card">
+    <h2>Konverter</h2>
+    <input type="text" id="textInput" placeholder="Zadejte text">
+    <button onclick="convertToUpperCase()">Převést na velká písmena</button>
+    <button onclick="convertToLowerCase()">Převést na malá písmena</button>
+    <p id="convertOut"></p>
+  </div>
+
+
+  <div class="card">
+    <h2>Spojení polí</h2>
+    <input type="text" id="input1" placeholder="Zadejte první hodnotu">
+    <input type="text" id="input2" placeholder="Zadejte druhou hodnotu">
+    <button onclick="combineArrays()">Spojit pole</button>
+    <p id="combineOut"></p>
+  </div>
+
+  <div class="card">
+    <h2>Ukaž seznam</h2>
+    <button onclick="displayAnimalCount()">Zobrazit</button>
+    <p id="displayOut"></p>
+  </div>
+
+
+  <div class="card">
+    <h2>Kontrola množiny</h2>
+    <input type="text" id="elementInput" placeholder="Zadejte prvek">
+    <button onclick="checkElement()">Zkontrolovat</button>
+    <p id="checkOut"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
